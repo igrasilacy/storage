@@ -18,3 +18,4 @@ def extract_user_profile(script) -> dict:
     data = script.contents[0]
     info = json.loads(data[data.find('{"config"') : -1])
     return info["entry_data"]["ProfilePage"][0]["graphql"]["user"]
+#good
